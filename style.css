@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    animation: pageEnter 0.8s ease both;
+}
+
+a,
+button {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.button {
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+.button:hover {
+    transform: translateY(-4px) scale(1.03);
+}
+
+.button:active {
+    transform: scale(0.95);
+}
+
+.card,
+.photo,
+.reason {
+    animation: cardEnter 0.8s ease both;
+}
+
+.photo:hover {
+    transform: translateY(-5px);
+}
+
+.photo {
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+@keyframes pageEnter {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes cardEnter {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}

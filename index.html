@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LuvPages 💌</title>
+
+<style>
+*{box-sizing:border-box}
+
+body{
+margin:0;
+font-family:Georgia,serif;
+background:linear-gradient(135deg,#ffd6e8,#fff7fb);
+color:#4a2633;
+text-align:center;
+min-height:100vh;
+overflow-x:hidden;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:30px;
+position:relative;
+overflow:hidden;
+}
+
+.content{
+position:relative;
+z-index:2;
+max-width:600px;
+}
+
+.small{
+font-family:Arial,sans-serif;
+letter-spacing:3px;
+font-size:13px;
+text-transform:uppercase;
+opacity:.7;
+}
+
+h1{
+font-size:clamp(45px,12vw,80px);
+color:#e83e8c;
+margin:15px 0;
+}
+
+p{
+font-size:19px;
+line-height:1.7;
+}
+
+.gift{
+font-size:90px;
+animation:float 3s ease-in-out infinite;
+}
+
+.button{
+display:inline-block;
+margin-top:25px;
+padding:16px 30px;
+background:#e83e8c;
+color:white;
+text-decoration:none;
+border-radius:50px;
+font-family:Arial,sans-serif;
+box-shadow:0 8px 25px rgba(232,62,140,.25);
+transition:.3s;
+}
+
+.button:hover{
+transform:translateY(-4px) scale(1.03);
+}
+
+.heart{
+position:absolute;
+font-size:25px;
+animation:rise 7s linear infinite;
+opacity:.5;
+}
+
+.h1{left:10%;bottom:-30px;animation-delay:1s}
+.h2{left:30%;bottom:-40px;animation-delay:3s}
+.h3{right:20%;bottom:-30px;animation-delay:2s}
+.h4{right:8%;bottom:-40px;animation-delay:4s}
+
+@keyframes rise{
+from{transform:translateY(0);opacity:0}
+20%{opacity:.6}
+to{transform:translateY(-110vh);opacity:0}
+}
+
+@keyframes float{
+50%{transform:translateY(-12px)}
+}
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+
+<div class="heart h1">💗</div>
+<div class="heart h2">✨</div>
+<div class="heart h3">💖</div>
+<div class="heart h4">🌸</div>
+
+<div class="content">
+
+<div class="small">A little something made with love</div>
+
+<div class="gift">🎁</div>
+
+<h1>LuvPages 💌</h1>
+
+<p>
+Someone made something special for you...
+</p>
+
+<p>
+Are you ready to open it? 🥹
+</p>
+
+<a href="message.html" class="button">
+Open Your Surprise 💗
+</a>
+
+</div>
+</div>
+
+</body>
+    </html>
